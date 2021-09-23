@@ -1,0 +1,12 @@
+#!name=Wechat_no_ad
+#!desc=微信去广告
+#!system=ios
+
+[MITM]
+hostname = %APPEND% mp.weixin.qq.com
+
+[Script]
+
+Wechat = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad,script-path=https://raw.githubusercontent.com/u-on/app/file/Surge/js/Wechat.js
+
+http-response ^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad 

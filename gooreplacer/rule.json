@@ -1,0 +1,34 @@
+{
+  "createBy": "https://gitee.com/uon/uon/raw/master/Gooreplacer/rule.json",
+  "version": "3.12.0",
+  "createAt": "2020/11/15 下午10:43:33",
+  "redirect-rules": [
+    {
+      "src": "(^https\\:\\/\\/github.com\\/[^/]*/[^/]*\\/releases\\/download\\/.*)",
+      "kind": "regexp",
+      "dst": "https://github.uon.workers.dev/$1",
+      "enable": true
+    }, 
+    {
+      "src": "^https:\\/\\/github\\.com\\/(.*)\\/archive/(.*)\\.zip",
+      "kind": "regexp",
+      "dst": "https://github.uon.workers.dev/https://github.com/$1/archive/$2.zip",
+      "enable": true
+    },
+    {
+      "src": "^https:\\/\\/github\\.com\\/(.*)\\/archive\\/(.*)\\.tar\\.gz",
+      "kind": "regexp",
+      "dst": "https://github.uon.workers.dev/https://github.com/$1/archive/$2.tar.gz",
+      "enable": true
+    },
+    {
+      "src": "www.google.com/recaptcha",
+      "kind": "wildcard",
+      "dst": "recaptcha.net/recaptcha",
+      "enable": true
+    }
+  ],
+  "cancel-rules": [],
+  "request-headers": [],
+  "response-headers": []
+}

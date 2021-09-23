@@ -1,0 +1,10 @@
+#!name=jd_price
+#!desc=jd_price
+#!system=ios
+
+[MITM]
+hostname = %APPEND% api.m.jd.com
+[Script]
+
+jd_price = type=http-request,requires-body=1,max-size=0,type=http-response,pattern=^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig),script-path=https://igread.ml/app/js/jd_price.js,script-update-interval=0
+

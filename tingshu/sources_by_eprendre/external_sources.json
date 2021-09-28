@@ -1,7 +1,7 @@
 {
     "version": 90,
     "entry_package": "sources_by_eprendre",
-    "download_url": "https://eprendre2.coding.net/p/tingshu/d/tingshu/git/raw/master/TingShuSources/sources_by_eprendre.jar",
+    "download_url": "https://github.com/u-on/app/raw/file/tingshu/sources_by_eprendre/sources_by_eprendre.jar",
     "update_msg": "\n修复海洋听书网",
     "support_url": ""
 }

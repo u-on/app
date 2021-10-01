@@ -22,3 +22,8 @@ https://raw.githubusercontent.com/u-on/app/file/Surge/moudle/TestFlightDownload.
 https://raw.githubusercontent.com/u-on/app/file/Surge/moudle/Wechat.sgmodule
 ```
 
+## 酷我
+
+```
+https://raw.githubusercontent.com/u-on/app/file/Surge/moudle/kuwo.sgmodule
+```

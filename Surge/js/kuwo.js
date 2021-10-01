@@ -27,6 +27,7 @@ var obj = JSON.parse(body);
 
 const vip = '/vip/v2/user/vip';
 const time = '/vip/spi/mservice';
+const url3='/v2/api/user/info';
 
 if (url.indexOf(vip) != -1) {
 	obj.data["isNewUser"] = "1";
@@ -45,5 +46,15 @@ if (url.indexOf(time) != -1) {
 	obj["isVIPLuxAutoPay"] = 2;
 	body = JSON.stringify(obj);
 }
+
+if (url.indexOf(url3) != -1) {
+	obj.data["vipType"] = "2";
+	
+	obj.data["vipExpires"] = "1654068149000";
+	
+	body = JSON.stringify(obj);
+}
+
+
 
 $done({body});

@@ -48,6 +48,7 @@ if (url.indexOf(time) != -1) {
 }
 
 if (url.indexOf(url3) != -1) {
+	console.log("已修改");
 	obj.data["vipType"] = "2";
 	obj.data["vipExpires"] = "1654068149";
 	body = JSON.stringify(obj);

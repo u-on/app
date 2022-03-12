@@ -1,7 +1,7 @@
 #!name=CamScanner
 #!desc=CamScanner
 #!system=ios
-# https://u-on.ml/app/Surge/moudle/CamScanner.sgmodule
+#! https://u-on.ml/app/Surge/moudle/CamScanner.sgmodule
 
 [MITM]
 hostname = %APPEND% ap*.intsig.net

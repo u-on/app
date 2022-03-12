@@ -8,5 +8,5 @@ hostname = %APPEND% ap*.intsig.net
 
 [Script]
 
-CamScanner = type=http-response,requires-body=1,max-size=0,pattern=https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?,script-path=https://u-on.ml/app/Surge/moudle/CamScanner.js
+CamScanner = type=http-response,requires-body=1,max-size=0,pattern=https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?,script-path=https://u-on.ml/app/Surge/moudle/CamScanner/CamScanner.js
 

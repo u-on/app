@@ -1,0 +1,12 @@
+#!name=CamScanner
+#!desc=CamScanner
+#!system=ios
+# http://u-on.ml/app/Surge/moudle/CamScanner.sgmodule
+
+[MITM]
+hostname = %APPEND% ap*.intsig.net
+
+[Script]
+
+CamScanner = type=http-response,requires-body=1,max-size=0,pattern=https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?,script-path=http://u-on.ml/app/Surge/moudle/CamScanner.js
+

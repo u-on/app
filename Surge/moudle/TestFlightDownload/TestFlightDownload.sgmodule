@@ -1,6 +1,6 @@
 #!name=TestFlight区域限制解除
 #!desc=该模块适用于更新TestFlight App时, 提示"APP不可用"问题.
-
+# http://u-on.ml/app/Surge/moudle/TestFlightDownload/TestFlightDownload.sgmodule
 [General]
 skip-proxy = %APPEND% iosapps.itunes.apple.com
 
